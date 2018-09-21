@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!--   <meta http-equiv="Cache-Control" content="no-store, no-chache" />
+  <meta http-equiv="Expires" content="0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UTS Open Login</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      background-image: url(https://open.uts.edu.au/img/backgroundsection2.png);
+      font-family: 'NBAkademie', Arial;
+    }
+
+    h1#header {
+      font-weight: lighter;
+      padding-bottom: 20px;
+      border-bottom: 4px solid white;
+      top: 5%;
+      padding-top: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-weight: lighter;
+    }
+
+    #logo {
+      margin-left: 40px;
+      margin-top: 20px;
+      position: absolute;
+    }
+
+    #content-wrapper {
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+      background-color: rgba(192, 192, 192, 0.4);
+      position: relative;
+      color: white;
+    }
+
+    #splash {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      width: 40%;
+      height: 40%;
+    }
+
+    .buttons {
+      padding-bottom: 5%;
+    }
+
+    .buttons div {
+      margin-bottom: 3%;
+      font-size: 16px;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .buttons div a {
+      background-color: #FF2305;
+      margin: 5px 0 0;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      white-space: nowrap;
+      width: 180px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img id="logo" src="https://open.uts.edu.au/img/uts-logo.png" width="70px" height="70px" alt="UTS logo">
+  </div>
+  <div id="content-wrapper">
+    <h1 id="header">Log In</h1>
+    <div class="splash">
+      <img id="splash" src="https://open.uts.edu.au/img/splashimg_updated.gif" alt="spash-bg">
+    </div>
+    <h2>Select your role to log in: </h2>
+    <div class="buttons">
+      <div id="non-staff" style="display: block;">
+        <a class="button-set" href="https://uts-dev.instructure.com/login/canvas">Non-Staff</a>
+      </div>
+      <div id="staff" style="display: block;">
+        <a class="button-set" href="https://uts-dev.instructure.com/login/saml">UTS Staff Member</a>
+      </div>
+      <p><input type="checkbox" name="remember" value="Remember"> Remember this choice for next time</p>
+    </div>
+</body>
+
+</html>
